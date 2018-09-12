@@ -5,14 +5,38 @@
 \usepackage{amsmath}
 
 \begin{document}
-1. Escribela solucion de la ecuacion en diferencias $x_{n+2}-4x_n=0$
+Ejercicios:
+\begin{enumerate}
+\item 
+
+Escribe la solucion de la ecuacion en diferencias $x_{n+2}-4x_n=0$
 con condiciones iniciales $x_{0}=1  x_{0}=-1$
 Solucion:
-La ecuacion resolvente es $r^{2}-4=0 r=\pm\2$ 
-$r_1=2$ $r_2=-2$
-$x_n=\alpha_1{2^n}+\alpha_2{-2^n}$
-Como $1=x_0=\alpha_1+\alpha_2$  y $-1=x_1=2\alpha_1-2\alpha_2$
+La ecuacion resolvente es:
+
+\begin{align*}
+  r^{2}-4&=0\\
+  r&=\pm 2\\ 
+  r_1&=2\\
+  r_2&=-2\\
+  x_n&=\alpha_1{2^{n}}+\alpha_2{-2^{n}}
+\end{align*}
+\item
+  
+Como $1=x_0=\alpha_1+\alpha_2$  y
+$-1=x_1=2\alpha_1-2\alpha_2$
 Hallando las soluciones de las ultimas dos ecuaciones se sigue que:
 $\alpha_1=\frac{1}{4}$ $\alpha_2=\frac{3}{4}$
-por tanto $x_n=\frac{1}{4}2^n-\frac{3}{4}2^n$
+por tanto $x_n=\frac{1}{4} 2^{n}-\frac{3}{4} -2^{n}$
+2. Si $d_n=ndn_1+(-1)^n$ para todo $n>=1$ y se tiene la condicion inicial $d_0=0$ calcula $d_4$
+Solucion:
+$d_0=0$
+\begin{align*}
+  d_1&=1(d_0)+(-1)\\
+  d_2&=2(d_1)+(-1)^2\\
+  d_3&=3(d_2)+(-1)^3\\
+  d_4&=4(d_3)+(-1)^4\\
+  d_4&=-15
+\end{align*}
+\end{enumerate}
 \end{document}
